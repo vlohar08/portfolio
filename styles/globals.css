@@ -8,6 +8,7 @@
 *::after {
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 .montserrat {
   font-family: "Montserrat", sans-serif;
