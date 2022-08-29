@@ -1,6 +1,7 @@
 import AboutMe from "../components/AboutMe/AboutMe";
 import MainHeroSection from "../components/MainHeroSection";
 import NavBar from "../components/NavBar/NavBar";
+import Projects from "../components/Projects/Projects";
 import Services from "../components/Services/Services";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <MainHeroSection />
         <AboutMe />
         <Services />
+        <Projects />
       </div>
     </>
   );
