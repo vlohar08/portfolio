@@ -16,28 +16,3 @@
 .poppins {
   font-family: "Poppins", sans-serif;
 }
-
-.skills > span {
-  animation: spin-words 6s infinite;
-}
-
-@keyframes spin-words {
-  0% {
-    transform: translateY(100%);
-  }
-  20% {
-    transform: translateY(-10%);
-  }
-  40% {
-    transform: translateY(-0%);
-  }
-  60% {
-    transform: translateY(-110%);
-  }
-  80% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(-200%);
-  }
-}

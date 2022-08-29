@@ -1,10 +1,11 @@
 import Head from "next/head";
-import MainHeroSection from "../components/MainHeroSection/MainHeroSection";
+import AboutMe from "../components/AboutMe";
+import MainHeroSection from "../components/MainHeroSection";
 import NavBar from "../components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <div className="bg-[#1d1d24]">
+    <div className="relative bg-[#1d1d24]">
       <Head>
         <style>
           @import
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <MainHeroSection />
+      <AboutMe />
     </div>
   );
 }

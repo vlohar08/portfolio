@@ -4,7 +4,7 @@ import MainMenu from "./MainMenu";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-between items-center py-5 px-10 relative z-50">
+    <header className="w-[100vw] absolute top-0 z-50 flex justify-between items-center py-[20px] px-[50px]">
       <div className="flex items-center">
         <Image
           src="/assets/logo-symbol-dark.png"
@@ -24,7 +24,7 @@ const NavBar = () => {
           alt="site-logo"
         />
       </div>
-    </div>
+    </header>
   );
 };
 
