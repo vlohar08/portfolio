@@ -24,7 +24,7 @@ const AboutMe = () => {
             height={665}
           />
           <div className="lg:w-1/2 text-start mx-auto">
-            <h2 className="poppins font-bold text-white text-[36px] md:text-[64px]">
+            <h2 className="poppins font-bold text-white text-[36px] md:text-[60px]">
               About Me
             </h2>
             <p className="text-[rgba(198,201,216,.75)] text-[16px] md:text-[18px] leading-[30px]">

@@ -1,6 +1,7 @@
 import AboutMe from "../components/AboutMe/AboutMe";
 import MainHeroSection from "../components/MainHeroSection";
 import NavBar from "../components/NavBar/NavBar";
+import Services from "../components/Services/Services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <NavBar />
         <MainHeroSection />
         <AboutMe />
+        <Services />
       </div>
     </>
   );
