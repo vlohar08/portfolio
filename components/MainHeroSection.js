@@ -35,7 +35,7 @@ const MainHeroSection = () => {
           }
         }
       `}</style>
-      <div className="wrapper absolute top-0 bg-right w-[100vw] h-[50vh] sm:h-[80vh] lg:h-[100vh] bg-black text-white">
+      <div className="wrapper relative bg-right w-[100vw] h-[50vh] sm:h-[80vh] lg:h-[100vh] bg-black text-white">
         <div className="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] p-7 w-[100%] max-w-[1200px]">
           <p className="montserrat font-400 text-[13px] sm:text-[15px] text-[#c6d9d8]">
             WELCOME TO MY WORLD
