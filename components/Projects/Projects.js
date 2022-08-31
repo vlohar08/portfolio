@@ -6,7 +6,7 @@ const Projects = () => {
     <SectionWrapper
       title="My Latest Projects"
       description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
-      bg="#191919"
+      bgColor="bg-[#191919]"
     >
       <ProjectItem
         category="Development"

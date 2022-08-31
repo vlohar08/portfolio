@@ -1,7 +1,7 @@
-const SectionWrapper = ({ children, title, description, bg, height }) => {
+const SectionWrapper = ({ children, title, description, bgColor, height }) => {
   return (
     <div
-      className={`text-white bg-[${bg}] py-[60px] md:py-[80px] lg:py-[120px] px-[15px] lg:h-[${height}]`}
+      className={`text-white ${bgColor} py-[60px] md:py-[80px] lg:py-[120px] px-[15px] lg:h-[${height}]`}
     >
       <div className="max-w-[1200px] w-full m-auto">
         <h2 className="text-center text-[36px] md:text-[60px] lg:text-[50px] lg:text-[60px] font-bold">

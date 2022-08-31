@@ -1,4 +1,6 @@
 import AboutMe from "../components/AboutMe/AboutMe";
+import Footer from "../components/Footer/Footer";
+import HireMe from "../components/HireMe/HireMe";
 import MainHeroSection from "../components/MainHeroSection";
 import NavBar from "../components/NavBar/NavBar";
 import Projects from "../components/Projects/Projects";
@@ -18,6 +20,8 @@ export default function Home() {
         <AboutMe />
         <Services />
         <Projects />
+        <HireMe />
+        <Footer />
       </div>
     </>
   );

@@ -8,7 +8,7 @@ const Services = () => {
         title="My Awesome Service"
         description="There are many variations of passages of Lorem Ipsum available, but
             the majority have suffered alteration."
-        bg="#101010"
+        bgColor="bg-[#101010]"
         height="100vh"
       >
         <ServiceItem
