@@ -1,6 +1,14 @@
-const SectionWrapper = ({ children, title, description, bgColor, height }) => {
+const SectionWrapper = ({
+  children,
+  id,
+  title,
+  description,
+  bgColor,
+  height,
+}) => {
   return (
-    <div
+    <section
+      id={id}
       className={`text-white ${bgColor} py-[60px] md:py-[80px] lg:py-[120px] px-[15px] lg:h-[${height}]`}
     >
       <div className="max-w-[1200px] w-full m-auto">
@@ -14,7 +22,7 @@ const SectionWrapper = ({ children, title, description, bgColor, height }) => {
           {children}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

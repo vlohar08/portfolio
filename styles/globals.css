@@ -11,6 +11,9 @@
   font-family: "Poppins", sans-serif;
   user-select: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }

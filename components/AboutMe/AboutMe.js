@@ -15,7 +15,10 @@ const AboutMe = () => {
   };
   return (
     <>
-      <div className="py-[60px] md:py-[80px] lg:py-[120px] px-[15px] lg:h-[100vh]">
+      <section
+        id="about"
+        className="py-[60px] md:py-[80px] lg:py-[120px] px-[15px] lg:h-[100vh]"
+      >
         <div className="flex wrap-all flex-col w-[80%] lg:w-full lg:flex-row lg:justify-between items-center max-w-[1200px] m-auto">
           <Image
             src="/assets/about-me.jpg"
@@ -52,7 +55,7 @@ const AboutMe = () => {
             )}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

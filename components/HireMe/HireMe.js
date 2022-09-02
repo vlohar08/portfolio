@@ -4,7 +4,10 @@ const HireMe = () => {
   const inputStyle =
     "focus:outline-0 px-[20px] py-[12px] placeholder:text-[hsla(0,0%,100%,.4)] rounded-md bg-transparent border-2 border-[hsla(0,0%,100%,.2)] my-2";
   return (
-    <div className="bg-[#101010] poppins py-[60px] lg:py-[120px] px-[30px]">
+    <section
+      id="contact"
+      className="bg-[#101010] poppins py-[60px] lg:py-[120px] px-[30px]"
+    >
       <div className="flex flex-wrap justify-between text-white max-w-[1200px] m-auto">
         <div className="lg:w-1/2 order-2 lg:order-none mt-2 lg:m-0">
           <h2 className="text-[36px] font-medium md:text-[60px] lg:text-[50px] xl:text-[60px]">
@@ -49,7 +52,7 @@ const HireMe = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

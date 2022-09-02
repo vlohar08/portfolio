@@ -10,6 +10,7 @@ const Services = () => {
             the majority have suffered alteration."
         bgColor="bg-[#101010]"
         height="100vh"
+        id="services"
       >
         <ServiceItem
           title="Business Strategy"

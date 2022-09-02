@@ -4,6 +4,7 @@ import ProjectItem from "./ProjectItem";
 const Projects = () => {
   return (
     <SectionWrapper
+      id="portfolio"
       title="My Latest Projects"
       description="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration."
       bgColor="bg-[#191919]"
