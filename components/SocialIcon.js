@@ -2,7 +2,7 @@ const Social = ({ children, link }) => {
   return (
     <a
       href={link}
-      className="transition-all mx-2 text-white hover:translate-y-[-7%] cursor-pointer"
+      className="transition-transform mx-2 text-white hover:translate-y-[-7%] cursor-pointer"
     >
       <svg
         fill="currentcolor"
