@@ -19,8 +19,8 @@ const MainMenu = ({ menuStyle, windowData }) => {
       <nav
         className={`${menuStyle} ${
           windowData.innerWidth < 768 &&
-          "transition-all duration-700 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)] px-[20px] py-[56px] w-[80vw] max-w-[350px] h-[100vh] fixed right-0 top-0 bg-[#101010] flex flex-col"
-        } md:block ml-7 translate-x-[100%] md:translate-x-0`}
+          "transition-all duration-700 ease-[cubic-bezier(0.77, 0.2, 0.05, 1)] px-[20px] py-[56px] w-[80vw] max-w-[350px] h-[100vh] fixed right-[-85vw] top-0 bg-[#101010] flex flex-col"
+        } md:block ml-7`}
       >
         <MenuLink title="Home" link="#home" activeSection={activeSection} />
         <MenuLink title="About" link="#about" activeSection={activeSection} />

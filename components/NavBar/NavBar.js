@@ -10,7 +10,7 @@ const NavBar = ({ windowData }) => {
   );
   const handleMobileMenu = () => {
     if (menuStyle === "") {
-      setMenuStyle("!translate-x-0");
+      setMenuStyle("!right-0");
       setMobileMenuIcon("/assets/x-mark-lined.svg");
     } else {
       setMenuStyle("");
