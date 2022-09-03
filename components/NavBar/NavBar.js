@@ -22,7 +22,7 @@ const NavBar = ({ windowData }) => {
       className={`w-[100vw] ${
         windowData.scrollY > 200 &&
         "!fixed !py-0 h-[70px] bg-[#191919] transition-all"
-      } absolute top-0 py-[20px] z-50 flex justify-between items-center px-[30px] sm:px-[50px]`}
+      } absolute py-[20px] z-50 flex justify-between items-center px-[30px] sm:px-[50px]`}
     >
       <div className="flex items-center">
         <Image
