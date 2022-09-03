@@ -24,6 +24,7 @@ export default function Home() {
   };
   useEffect(() => {
     handleWindowResize();
+    handleWindowScroll();
     window.addEventListener(
       "scroll",
       debounce(handleWindowScroll, 50, { maxWait: 1000 })
