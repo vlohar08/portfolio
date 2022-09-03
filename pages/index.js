@@ -17,7 +17,6 @@ export default function Home() {
     }));
   };
   const handleWindowScroll = () => {
-    console.log(1);
     setWindowData((prevData) => ({
       ...prevData,
       scrollY: window.scrollY,
@@ -25,7 +24,6 @@ export default function Home() {
   };
   useEffect(() => {
     handleWindowResize();
-    window.addEventListener("resize", handleWindowResize);
     window.addEventListener(
       "scroll",
       debounce(handleWindowScroll, 50, { maxWait: 1000 })

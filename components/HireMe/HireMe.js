@@ -17,21 +17,33 @@ const HireMe = () => {
             I am available for freelance work. Connect with me via phone: 01923
             088574 or email: admin@example.com
           </p>
-          <form className="flex flex-col" method="post">
-            <input className={inputStyle} type="text" placeholder="Your Name" />
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLScdkELNu8jf4G2sky9EDC_mBvMnZir2CrGUaWU8Faiw2gBBaw/formResponse"
+            className="flex flex-col"
+            method="post"
+          >
+            <input
+              className={inputStyle}
+              name="entry.255781897"
+              type="text"
+              placeholder="Your Name"
+            />
             <input
               className={inputStyle}
               type="text"
+              name="entry.186554619"
               placeholder="Your Email"
             />
             <input
               className={inputStyle}
               type="text"
+              name="entry.1278516840"
               placeholder="Write a Subject"
             />
             <textarea
               className={`${inputStyle} h-[150px] placeholder:`}
               type="text"
+              name="entry.347078715"
               placeholder="Your Message"
             />
             <button
