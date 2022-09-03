@@ -20,10 +20,9 @@ const NavBar = ({ windowData }) => {
   return (
     <header
       className={`w-[100vw] ${
-        windowData.scrollY < 200
-          ? "absolute py-[20px]"
-          : "fixed h-[70px] bg-[#191919]"
-      } top-0 transition-all duration-300 ease-in-out z-50 flex justify-between items-center px-[30px] sm:px-[50px]`}
+        windowData.scrollY > 200 &&
+        "!fixed !py-0 h-[70px] bg-[#191919] transition-all"
+      } absolute top-0 py-[20px] z-50 flex justify-between items-center px-[30px] sm:px-[50px]`}
     >
       <div className="flex items-center">
         <Image
