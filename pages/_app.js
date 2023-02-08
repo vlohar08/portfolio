@@ -1,7 +1,14 @@
-import '../styles/globals.css'
+import NavBar from "../components/NavBar/NavBar";
+import WindowContextProvider from "../context/windowContext";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <WindowContextProvider>
+      <NavBar />
+      <Component {...pageProps} />
+    </WindowContextProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

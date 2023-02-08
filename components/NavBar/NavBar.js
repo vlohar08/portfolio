@@ -2,15 +2,19 @@ import Image from "next/image";
 import { useState } from "react";
 import SocialIcon from "../SocialIcon";
 import MainMenu from "./MainMenu";
+import { useWindow } from "../../context/windowContext";
 
-const NavBar = ({ windowData }) => {
+const NavBar = () => {
   const [isMobileMenuExpanded, setIsMobileMenuExpanded] = useState(false);
+  const windowData = useWindow();
+
   const handleMobileMenu = () => {
     setIsMobileMenuExpanded((prevValue) => !prevValue);
   };
+
   return (
     <header
-      className={`w-[100vw] ${
+      className={`w-full ${
         windowData.scrollY > 200 &&
         "!fixed !py-0 h-[70px] bg-[#191919] transition-all"
       } absolute py-[20px] z-50 flex justify-between items-center px-[30px] sm:px-[50px]`}
@@ -22,10 +26,7 @@ const NavBar = ({ windowData }) => {
           height={28}
           alt="site-logo"
         />
-        <MainMenu
-          menuStyle={isMobileMenuExpanded ? "!right-0" : ""}
-          windowData={windowData}
-        />
+        <MainMenu menuStyle={isMobileMenuExpanded ? "!right-0" : ""} />
       </div>
       <div className="w-fit flex justify-between items-center">
         <SocialIcon link="https://github.com/vlohar08">

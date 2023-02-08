@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import MenuLink from "./MenuLink";
+import { useWindow } from "../../context/windowContext";
 
-const MainMenu = ({ menuStyle, windowData }) => {
+const MainMenu = ({ menuStyle }) => {
   const [activeSection, setActiveSection] = useState("Home");
+  const windowData = useWindow();
+
   useEffect(() => {
     const sections = document.getElementsByTagName("section");
     for (let section of sections) {
@@ -13,6 +16,7 @@ const MainMenu = ({ menuStyle, windowData }) => {
       }
     }
   }, [windowData]);
+
   return (
     <>
       <nav
