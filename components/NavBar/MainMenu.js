@@ -7,8 +7,7 @@ const MainMenu = ({ menuStyle, windowData }) => {
     const sections = document.getElementsByTagName("section");
     for (let section of sections) {
       let data = section.getBoundingClientRect();
-      let link = document.querySelector(`a.${section.id}`);
-      console.log(link);
+      let link = document.querySelector(`a[data-menu=${section.id}]`);
       if (link && data.top <= 100 && data.height >= Math.abs(data.top)) {
         setActiveSection(link.innerText);
       }

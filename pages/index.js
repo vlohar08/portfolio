@@ -32,21 +32,14 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <style jsx>
-        {`
-          @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
-        `}
-      </style>
-      <div className="bg-[#191919]">
-        <NavBar windowData={windowData} />
-        <MainHeroSection />
-        <AboutMe />
-        <Services />
-        <Projects />
-        <HireMe />
-        <Footer />
-      </div>
-    </>
+    <div className="bg-[#191919]">
+      <NavBar windowData={windowData} />
+      <MainHeroSection />
+      <AboutMe />
+      <Services />
+      <Projects />
+      <HireMe />
+      <Footer />
+    </div>
   );
 }

@@ -4,18 +4,9 @@ import SocialIcon from "../SocialIcon";
 import MainMenu from "./MainMenu";
 
 const NavBar = ({ windowData }) => {
-  const [menuStyle, setMenuStyle] = useState("");
-  const [mobileMenuIcon, setMobileMenuIcon] = useState(
-    "/assets/menu-right-lined.svg"
-  );
+  const [isMobileMenuExpanded, setIsMobileMenuExpanded] = useState(false);
   const handleMobileMenu = () => {
-    if (menuStyle === "") {
-      setMenuStyle("!right-0");
-      setMobileMenuIcon("/assets/x-mark-lined.svg");
-    } else {
-      setMenuStyle("");
-      setMobileMenuIcon("/assets/menu-right-lined.svg");
-    }
+    setIsMobileMenuExpanded((prevValue) => !prevValue);
   };
   return (
     <header
@@ -31,7 +22,10 @@ const NavBar = ({ windowData }) => {
           height={28}
           alt="site-logo"
         />
-        <MainMenu menuStyle={menuStyle} windowData={windowData} />
+        <MainMenu
+          menuStyle={isMobileMenuExpanded ? "!right-0" : ""}
+          windowData={windowData}
+        />
       </div>
       <div className="w-fit flex justify-between items-center">
         <SocialIcon link="https://github.com/vlohar08">
@@ -52,7 +46,11 @@ const NavBar = ({ windowData }) => {
           <div className="ml-6" onClick={handleMobileMenu}>
             <Image
               className="sm:!hidden"
-              src={mobileMenuIcon}
+              src={
+                isMobileMenuExpanded
+                  ? "/assets/x-mark-lined.svg"
+                  : "/assets/menu-right-lined.svg"
+              }
               width={40}
               height={40}
               alt="site-logo"

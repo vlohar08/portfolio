@@ -5,7 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: "Montserrat, sans-serif",
+        poppins: "Poppins, sans-serif",
+      },
+      backgroundImage: {
+        "hero-image": "url('/assets/main-hero-section-bg.jpg')",
+      },
+    },
   },
   plugins: [],
 };

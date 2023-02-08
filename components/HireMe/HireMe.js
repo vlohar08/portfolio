@@ -1,12 +1,10 @@
 import Image from "next/image";
 
 const HireMe = () => {
-  const inputStyle =
-    "focus:outline-0 px-[20px] py-[12px] placeholder:text-[hsla(0,0%,100%,.4)] rounded-md bg-transparent border-2 border-[hsla(0,0%,100%,.2)] my-2";
   return (
     <section
       id="contact"
-      className="bg-[#101010] poppins py-[60px] lg:py-[120px] px-[30px]"
+      className="bg-[#101010] font-poppins py-[60px] lg:py-[120px] px-[30px]"
     >
       <div className="flex flex-wrap justify-between text-white max-w-[1200px] m-auto">
         <div className="lg:w-1/2 order-2 lg:order-none mt-2 lg:m-0">
@@ -23,25 +21,25 @@ const HireMe = () => {
             method="post"
           >
             <input
-              className={inputStyle}
+              className="form-input"
               name="entry.255781897"
               type="text"
               placeholder="Your Name"
             />
             <input
-              className={inputStyle}
+              className="form-input"
               type="text"
               name="entry.186554619"
               placeholder="Your Email"
             />
             <input
-              className={inputStyle}
+              className="form-input"
               type="text"
               name="entry.1278516840"
               placeholder="Write a Subject"
             />
             <textarea
-              className={`${inputStyle} h-[150px] placeholder:`}
+              className={`form-input h-[150px] placeholder:`}
               type="text"
               name="entry.347078715"
               placeholder="Your Message"

@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&family=Poppins:wght@300;400;500;600&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&family=Poppins:wght@300;400;500;600&display=swap");
 
 *,
 *::before,
@@ -11,12 +11,50 @@
   font-family: "Poppins", sans-serif;
   user-select: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+
+@layer base {
+  .link-title::before {
+    @apply absolute content-[""] w-0 h-[2px] bottom-0 bg-white transition-all;
+  }
+  [data-active="true"]::before {
+    @apply !w-full !bg-red-500;
+  }
+  [data-active="true"] {
+    @apply !text-red-500;
+  }
+  .form-input {
+    @apply focus:outline-0 px-[20px] py-[12px] placeholder:text-[hsla(0,0%,100%,.4)] rounded-md bg-transparent border-2 border-[hsla(0,0%,100%,.2)] my-2;
+  }
+  .content-list-title::before {
+    @apply absolute content-[""] w-[30px] h-[2px] bottom-0 bg-white transition-all;
+  }
 }
-.poppins {
-  font-family: "Poppins", sans-serif;
+
+.skills > span {
+  animation: spin-words 6s infinite;
+}
+
+@keyframes spin-words {
+  0% {
+    transform: translateY(100%);
+  }
+  20% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(-0%);
+  }
+  60% {
+    transform: translateY(-110%);
+  }
+  80% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-200%);
+  }
 }

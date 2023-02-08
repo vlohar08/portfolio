@@ -1,6 +1,6 @@
 import ContentList from "./ContentList";
 
-const EducationAndCertification = (display) => {
+const EducationAndCertification = () => {
   return (
     <>
       <ul
