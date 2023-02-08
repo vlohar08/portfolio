@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar/NavBar";
-import WindowContextProvider from "../context/windowContext";
+import WindowContextProvider from "/context/windowContext";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
