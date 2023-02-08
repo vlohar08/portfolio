@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import MenuLink from "./MenuLink";
-import { useWindow } from "/context/windowContext";
+import { useWindow } from "/context/WindowContext";
 
 const MainMenu = ({ menuStyle }) => {
   const [activeSection, setActiveSection] = useState("Home");

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import SocialIcon from "../SocialIcon";
 import MainMenu from "./MainMenu";
-import { useWindow } from "/context/windowContext";
+import { useWindow } from "/context/WindowContext";
 
 const NavBar = () => {
   const [isMobileMenuExpanded, setIsMobileMenuExpanded] = useState(false);
