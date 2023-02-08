@@ -32,6 +32,11 @@ html {
   .content-list-title::before {
     @apply absolute content-[""] w-[30px] h-[2px] bottom-0 bg-white transition-all;
   }
+  @media (max-width: 768px) {
+    .nav-menu {
+      @apply transition-all duration-700 px-[20px] py-[56px] w-[80vw] max-w-[350px] h-[100vh] fixed right-[-85vw] top-0 bg-[#101010] flex flex-col;
+    }
+  }
 }
 
 .skills > span {

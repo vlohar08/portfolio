@@ -26,7 +26,7 @@ const NavBar = () => {
           height={28}
           alt="site-logo"
         />
-        <MainMenu menuStyle={isMobileMenuExpanded ? "!right-0" : ""} />
+        <MainMenu menuStyle={isMobileMenuExpanded ? "!right-0 z-[-1]" : ""} />
       </div>
       <div className="w-fit flex justify-between items-center">
         <SocialIcon link="https://github.com/vlohar08">
@@ -43,21 +43,18 @@ const NavBar = () => {
             fill="currentcolor"
           />
         </SocialIcon>
-        {windowData.innerWidth < 768 && (
-          <div className="ml-6" onClick={handleMobileMenu}>
-            <Image
-              className="sm:!hidden"
-              src={
-                isMobileMenuExpanded
-                  ? "/assets/x-mark-lined.svg"
-                  : "/assets/menu-right-lined.svg"
-              }
-              width={40}
-              height={40}
-              alt="site-logo"
-            />
-          </div>
-        )}
+        <div className="ml-6 block md:hidden" onClick={handleMobileMenu}>
+          <Image
+            src={
+              isMobileMenuExpanded
+                ? "/assets/x-mark-lined.svg"
+                : "/assets/menu-right-lined.svg"
+            }
+            width={40}
+            height={40}
+            alt="site-logo"
+          />
+        </div>
       </div>
     </header>
   );

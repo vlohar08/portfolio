@@ -3,19 +3,12 @@ import { createContext, useContext, useEffect, useState } from "react";
 
 const WindowContext = createContext({
   scrollY: 0,
-  innerWidth: 0,
 });
 
 export const useWindow = () => useContext(WindowContext);
 
 const WindowContextProvider = ({ children }) => {
-  const [windowData, setWindowData] = useState({ innerWidth: 0, scrollY: 0 });
-  const handleWindowResize = () => {
-    setWindowData((prevData) => ({
-      ...prevData,
-      innerWidth: window.innerWidth,
-    }));
-  };
+  const [windowData, setWindowData] = useState({ scrollY: 0 });
   const handleWindowScroll = () => {
     setWindowData((prevData) => ({
       ...prevData,
@@ -23,15 +16,10 @@ const WindowContextProvider = ({ children }) => {
     }));
   };
   useEffect(() => {
-    handleWindowResize();
     handleWindowScroll();
     window.addEventListener(
       "scroll",
       debounce(handleWindowScroll, 50, { maxWait: 1000 })
-    );
-    window.addEventListener(
-      "resize",
-      debounce(handleWindowResize, 50, { maxWait: 1000 })
     );
   }, []);
   return (
